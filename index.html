@@ -1,19 +1,15 @@
 <!DOCTYPE html>
-<html>
 <html lang="en">
 <head>
     <title>Login Page</title>
     <style>
-
         body {
-
             font-family: Arial, sans-serif;
             background-color: #531271;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-
         }
         .login-container {
             background-color: rgb(255, 255, 255);
@@ -41,61 +37,48 @@
         input[type="submit"]:hover {
             background-color: #adc9ad;
         }
+
+        .bg {
+            background-color: #2b2b2b; /* Dark background */
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            color: white;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        .container {
+            padding: 16px;
+        }
     </style>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Your Website Title</title>
-<style>
-  body, html {
-    height: 100%;
-    margin: 0;
-    font-family: Arial, sans-serif;
-  }
-  .bg {
-    background-color: #2b2b2b; /* Dark background */
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    color: white;
-    text-align: center;
-    padding-top: 20px;
-  }
-  .login-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 300px;
-    padding: 20px;
-    background: white;
-    box-shadow: 0px 0px 10px 0px #000;
-  }
-  input[type=text], input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-  }
-  button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-  }
-  button:hover {
-    opacity: 0.8;
-  }
-  .container {
-    padding: 16px;
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <div class="login-container">
@@ -105,31 +88,34 @@
             <input type="password" placeholder="Password" name="password" required>
             <input type="submit" value="Login">
         </form>
+        <!-- Hyperlink added below the form in the white login container -->
+        <p><a href="https://app.mentormatchingengine.org/conferences" target="_blank">Visit Mentor Matching Engine Conferences</a></p>
     </div>
 
-<div class="bg">
-  <h1>Go beyond the classroom with MME.</h1>
-  <div class="login-container">
-    <form action="/submit-your-form">
-      <div class="container">
-        <label for="email"><b>Email Address</b></label>
-        <input type="text" placeholder="Enter Email" name="email" required>
+    <div class="bg">
+        <h1>Go beyond the classroom with MME.</h1>
+        <div class="login-container">
+            <form action="/submit-your-form">
+                <div class="container">
+                    <label for="email"><b>Email Address</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
 
-        <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
 
-        <button type="submit">Login</button>
-        <label>
-          <input type="checkbox" checked="checked" name="remember"> Remember me
-        </label>
-      </div>
+                    <button type="submit">Login</button>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                </div>
 
-      <div class="container" style="background-color:#f1f1f1">
-        <span class="psw">Forgot <a href="#">password?</a></span>
-      </div>
-    </form>
-  </div>
-</div>
-
+                <div class="container" style="background-color:#f1f1f1">
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>
+            <!-- Hyperlink added below the form in the dark background section -->
+            <p><a href="https://app.mentormatchingengine.org/conferences" target="_blank">Visit Mentor Matching Engine Conferences</a></p>
+        </div>
+    </div>
 </body>
 </html>
